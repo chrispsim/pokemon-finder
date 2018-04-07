@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokemon_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SPK-78-qe6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokemon-Finder" translatesAutoresizingMaskIntoConstraints="NO" id="egU-8K-GmF">
+                                <rect key="frame" x="67" y="30" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LsJ-as-2ML"/>
+                                    <constraint firstAttribute="height" constant="128" id="jtt-kY-PCg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Pokemon" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7d-Hd-GC3">
+                                <rect key="frame" x="87.5" y="168" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5Ve-ar-Hq2"/>
+                                    <constraint firstAttribute="height" constant="40" id="qi5-PA-zUY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfO-TP-19Z">
+                                <rect key="frame" x="162.5" y="223" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="R7H-yc-E0g"/>
+                                    <constraint firstAttribute="height" constant="50" id="gAn-U4-PZc"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="poke_ball"/>
+                                <connections>
+                                    <action selector="bSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oY0-mh-4oc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iLe-YI-MY6">
+                                <rect key="frame" x="112" y="304" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="h2Z-Bn-JxB"/>
+                                    <constraint firstAttribute="width" constant="150" id="stP-Bg-1hD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03I-Ey-llW">
+                                <rect key="frame" x="62.5" y="489" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="aB1-dp-Ec4"/>
+                                    <constraint firstAttribute="width" constant="250" id="hrt-wr-Gmu"/>
+                                    <constraint firstAttribute="height" constant="21" id="qrM-qc-UVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G7d-Hd-GC3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ec-UD-1Ak"/>
+                            <constraint firstItem="03I-Ey-llW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B5I-hX-2Qo"/>
+                            <constraint firstItem="SPK-78-qe6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BbV-HO-JWj"/>
+                            <constraint firstItem="egU-8K-GmF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C2T-il-6yU"/>
+                            <constraint firstItem="03I-Ey-llW" firstAttribute="top" secondItem="iLe-YI-MY6" secondAttribute="bottom" constant="35" id="I0z-Bv-Y3X"/>
+                            <constraint firstItem="SPK-78-qe6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MFf-dd-a6d"/>
+                            <constraint firstItem="SPK-78-qe6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OAn-DJ-bZP"/>
+                            <constraint firstItem="gfO-TP-19Z" firstAttribute="top" secondItem="G7d-Hd-GC3" secondAttribute="bottom" constant="15" id="Yn2-ZV-6Yb"/>
+                            <constraint firstItem="iLe-YI-MY6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="huD-Y2-Y4H"/>
+                            <constraint firstItem="gfO-TP-19Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iNq-d4-zgE"/>
+                            <constraint firstItem="egU-8K-GmF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pZX-rG-3OT"/>
+                            <constraint firstItem="iLe-YI-MY6" firstAttribute="top" secondItem="gfO-TP-19Z" secondAttribute="bottom" constant="31" id="rdo-QX-9sJ"/>
+                            <constraint firstItem="SPK-78-qe6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ssA-6S-cuj"/>
+                            <constraint firstItem="G7d-Hd-GC3" firstAttribute="top" secondItem="egU-8K-GmF" secondAttribute="bottom" constant="10" id="xVM-1s-Fz2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgPokemon" destination="iLe-YI-MY6" id="rq6-dN-Yke"/>
+                        <outlet property="lbPokemonName" destination="03I-Ey-llW" id="Jcn-cS-G2E"/>
+                        <outlet property="tbPokemonName" destination="G7d-Hd-GC3" id="wMl-wm-3Lw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pokemon-Finder" width="689" height="133"/>
+        <image name="background" width="1131" height="707"/>
+        <image name="poke_ball" width="767" height="767"/>
+    </resources>
+</document>
